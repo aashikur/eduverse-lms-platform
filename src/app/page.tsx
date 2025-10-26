@@ -9,8 +9,7 @@ export default function HomePage() {
      <Button variant="secondary">Button</Button>
      <Button variant="ghost">Button</Button>
      <Button variant="link">Button</Button>
-     <Button variant="icon">Button</Button>
-     <Button variant="icon-sm">Button</Button>
+     
     </div>
   );
 }
