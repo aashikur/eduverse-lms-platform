@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
-import { Card } from "@/components/ui/card";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { ThemeToggle } from "@/components/ui/ThemeToggle";
 
 export default function HomePage() {
   return (
@@ -10,7 +11,18 @@ export default function HomePage() {
      <Button variant="secondary">Button</Button>
      <Button variant="ghost">Button</Button>
      <Button variant="link">Button</Button>
-     <Card></Card>
+     <Card>
+       <CardHeader>
+        <CardTitle>Toggle Theme is here</CardTitle>
+        <CardDescription>
+          Choose your theme : light | dark | sysem
+        </CardDescription>
+       </CardHeader>
+
+       <CardContent>
+         <ThemeToggle></ThemeToggle>
+       </CardContent>
+     </Card>
      
      
     </div>
