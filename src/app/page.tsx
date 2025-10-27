@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { Card } from "@/components/ui/card";
 
 export default function HomePage() {
   return (
@@ -9,6 +10,8 @@ export default function HomePage() {
      <Button variant="secondary">Button</Button>
      <Button variant="ghost">Button</Button>
      <Button variant="link">Button</Button>
+     <Card></Card>
+     
      
     </div>
   );
