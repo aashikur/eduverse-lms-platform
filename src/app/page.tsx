@@ -15,7 +15,7 @@ export default function HomePage() {
        <CardHeader>
         <CardTitle>Toggle Theme is here</CardTitle>
         <CardDescription>
-          Choose your theme : light | dark | sysem
+          Choose your theme : light | dark | system
         </CardDescription>
        </CardHeader>
 
