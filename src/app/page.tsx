@@ -7,6 +7,21 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { ThemeToggle } from "@/components/ui/ThemeToggle";
+import Link from "next/link";
+
+
+export interface NavLink  {
+  href: string,
+  label: string
+}
+
+// nav with links, home, about, contact, dashboard, login with link
+export const navItems : NavLink[] = [
+  {href: '/', label: 'Home'},
+  {href: '/dashboard', label: 'Dashboard'},
+  {href: '/course', label: 'Course'},
+  {href: '/login', label: 'Login'},
+]
 
 export default function HomePage() {
   return (
@@ -63,6 +78,29 @@ export default function HomePage() {
               <ThemeToggle />
               <span className="text-sm text-muted-foreground">
                 Use this toggle to preview themes across the app.
+              </span>
+            </div>
+          </CardContent>
+        </Card>
+
+
+        <Card>
+          <CardHeader>
+            <CardTitle>Navigation</CardTitle>
+            <CardDescription>Switch between light and dark modes instantly.</CardDescription>
+          </CardHeader>
+          <CardContent>
+            <div className="flex items-center gap-4">
+              <span className="text-sm text-muted-foreground space-x-2">
+
+                {navItems.map((item) => (
+                  <Button variant={'outline'} key={item.href} asChild>
+                    <Link href={item.href}>{item.label}</Link>
+                  </Button>
+                ))}
+
+
+
               </span>
             </div>
           </CardContent>

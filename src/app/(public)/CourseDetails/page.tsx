@@ -82,14 +82,14 @@ const CourseDetails: React.FC<CourseDetailsProps> = () => {
         {/* --- 1. Hero Section: The Problem & The Solution (Dark/Light Shade Contrast) --- */}
         <header className="pt-16 pb-12 text-center relative overflow-hidden rounded-3xl bg-gray-950 border border-purple-900/50 shadow-2xl">
            {/* Background subtle gradient for premium feel */}
-           <div className="absolute inset-0 bg-gradient-to-br from-gray-900 to-black opacity-70"></div>
+           <div className="absolute inset-0 from-gray-900 to-black opacity-70"></div>
            <div className="relative z-10 p-8 sm:p-12">
               <p className="text-sm font-medium uppercase tracking-widest text-purple-400 mb-2">The Gravix Mastery Course</p>
               <h1 className="text-5xl sm:text-7xl font-extrabold text-white mb-6 leading-tight">
                   <span className="text-purple-500">Gravix</span>: Edit. Earn. Elevate.
               </h1>
               <h2 className="text-2xl sm:text-3xl font-light text-gray-300 max-w-4xl mx-auto">
-                 "**Why people can't learn video editing and earn money**?" We solve this with a complete editing and business blueprint.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, esse?
               </h2>
               <div className="mt-8">
                  <Button>
