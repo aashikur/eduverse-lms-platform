@@ -21,6 +21,8 @@ export const navItems : NavLink[] = [
   {href: '/dashboard', label: 'Dashboard'},
   {href: '/course', label: 'Course'},
   {href: '/login', label: 'Login'},
+  {href: '/register', label: 'Register'},
+  {href: '/CourseDetails', label: 'CourseDetails'},
 ]
 
 export default function HomePage() {
@@ -91,7 +93,7 @@ export default function HomePage() {
           </CardHeader>
           <CardContent>
             <div className="flex items-center gap-4">
-              <span className="text-sm text-muted-foreground space-x-2">
+              <span className="text-sm text-muted-foreground space-x-2 space-y-2">
 
                 {navItems.map((item) => (
                   <Button variant={'outline'} key={item.href} asChild>

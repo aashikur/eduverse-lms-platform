@@ -40,10 +40,7 @@ interface ErrorState {
   agree?: string;
 }
 
-const fadeInUp = {
-  hidden: { opacity: 0, y: 10 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.45, ease: "easeOut" } },
-};
+
 
 export default function RegisterPage() {
   const [form, setForm] = useState<FormState>({
@@ -87,11 +84,11 @@ export default function RegisterPage() {
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-slate-50 dark:bg-slate-900 p-6">
-      <motion.div initial="hidden" animate="visible" variants={fadeInUp} className="w-full max-w-md">
+      <motion.div initial="hidden" animate="visible"  className="w-full max-w-md">
         <Card className="rounded-2xl border border-slate-200 dark:border-slate-800 shadow-xl">
           <CardHeader className="px-6 pt-6">
             <div className="flex items-center gap-3">
-              <div className="rounded-full bg-gradient-to-br from-indigo-500 to-pink-500 w-12 h-12 flex items-center justify-center text-white shadow-md">
+              <div className="rounded-full  from-indigo-500 to-pink-500 w-12 h-12 flex items-center justify-center text-white shadow-md">
                 <User size={18} />
               </div>
               <div>
